@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GmEngineApi Teste</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+    <script src="GmEngineApi(html)/index.js"></script><!--Importa a api-->
+</head>
+<body>
+    <script>
+        createCanvas(600,600) //Cria a canvas
+        background("#191919") //Coloca uma cor de fundo na canvas  
+        createElement(30,30,0,0,"box","#eeeeee", "primeiroJogador") //Cria um elemento com os parametros (30 altura,30 largura,0 eixo x,0 eixo y,"box" tipo,"#eeeeee" cor, "primeiroJogador" id)
+        createElement(30,30,70,70,"circle","#eeeeee", "segundoJogador", 20) //Cria uma bola ao invez de criar um quadrado
+        createElement(30,30,40,40,"box","#eeeeee", "terceiroJogador")
+        deleteElement("primeiroJogador") //deleta o elemento de id "primeiroJogador"
+    </script>
+</body>
+</html>
